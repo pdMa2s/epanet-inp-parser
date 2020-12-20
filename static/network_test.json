@@ -1,0 +1,381 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "pos": [
+        -1133.97,
+        1951.48
+      ],
+      "type": "Junction",
+      "id": "Junct_10"
+    },
+    {
+      "pos": [
+        -1133.97,
+        2626.58
+      ],
+      "type": "Junction",
+      "id": "Junct_20"
+    },
+    {
+      "pos": [
+        -1228.9,
+        5094.94
+      ],
+      "type": "Junction",
+      "id": "Junct_30"
+    },
+    {
+      "pos": [
+        -1250.0,
+        5717.3
+      ],
+      "type": "Junction",
+      "id": "Junct_40"
+    },
+    {
+      "pos": [
+        -1271.1,
+        7500.0
+      ],
+      "type": "Junction",
+      "id": "PE_Tocha"
+    },
+    {
+      "pos": [
+        -1197.26,
+        3850.21
+      ],
+      "type": "Junction",
+      "id": "Junct_50"
+    },
+    {
+      "pos": [
+        2104.43,
+        1835.44
+      ],
+      "type": "Junction",
+      "id": "Junct_60"
+    },
+    {
+      "pos": [
+        2041.14,
+        2447.26
+      ],
+      "type": "Junction",
+      "id": "Junct_70"
+    },
+    {
+      "pos": [
+        1967.3,
+        3734.18
+      ],
+      "type": "Junction",
+      "id": "Junct_80"
+    },
+    {
+      "pos": [
+        1977.85,
+        4915.61
+      ],
+      "type": "Junction",
+      "id": "Junct_90"
+    },
+    {
+      "pos": [
+        1967.3,
+        5474.68
+      ],
+      "type": "Junction",
+      "id": "Junct_100"
+    },
+    {
+      "pos": [
+        2051.69,
+        7521.1
+      ],
+      "type": "Junction",
+      "id": "PE_Mira"
+    },
+    {
+      "pos": [
+        4024.26,
+        1751.05
+      ],
+      "type": "Junction",
+      "id": "Junct_110"
+    },
+    {
+      "pos": [
+        4003.16,
+        2267.93
+      ],
+      "type": "Junction",
+      "id": "Junct_120"
+    },
+    {
+      "pos": [
+        3876.58,
+        4789.03
+      ],
+      "type": "Junction",
+      "id": "Junct_140"
+    },
+    {
+      "pos": [
+        3908.23,
+        5284.81
+      ],
+      "type": "Junction",
+      "id": "Junct_150"
+    },
+    {
+      "pos": [
+        3855.49,
+        7447.26
+      ],
+      "type": "Junction",
+      "id": "PE_Fontinha"
+    },
+    {
+      "pos": [
+        6007.38,
+        1782.7
+      ],
+      "type": "Junction",
+      "id": "Junct_160"
+    },
+    {
+      "pos": [
+        5996.84,
+        2299.58
+      ],
+      "type": "Junction",
+      "id": "Junct_170"
+    },
+    {
+      "pos": [
+        5986.29,
+        4673.0
+      ],
+      "type": "Junction",
+      "id": "Junct_180"
+    },
+    {
+      "pos": [
+        5954.64,
+        5200.42
+      ],
+      "type": "Junction",
+      "id": "Junct_190"
+    },
+    {
+      "pos": [
+        5965.19,
+        7394.51
+      ],
+      "type": "Junction",
+      "id": "PE_Lemede"
+    },
+    {
+      "pos": [
+        3169.83,
+        981.01
+      ],
+      "type": "Reservoir",
+      "id": "Reser_10"
+    },
+    {
+      "pos": [
+        -1271.1,
+        6666.67
+      ],
+      "type": "Tank",
+      "id": "R_Tocha"
+    },
+    {
+      "pos": [
+        1977.85,
+        6582.28
+      ],
+      "type": "Tank",
+      "id": "R_Mira"
+    },
+    {
+      "pos": [
+        3834.39,
+        6487.34
+      ],
+      "type": "Tank",
+      "id": "R_Fontinha"
+    },
+    {
+      "pos": [
+        5975.74,
+        6434.6
+      ],
+      "type": "Tank",
+      "id": "R_Lemede"
+    }
+  ],
+  "links": [
+    {
+      "type": "Pump",
+      "source": "Junct_10",
+      "target": "Junct_20",
+      "key": "B6N"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_20",
+      "target": "Junct_50",
+      "key": "Pipe_50"
+    },
+    {
+      "type": "Valve",
+      "source": "Junct_30",
+      "target": "Junct_40",
+      "key": "Val_10"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_40",
+      "target": "R_Tocha",
+      "key": "Pipe_30"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_50",
+      "target": "Junct_30",
+      "key": "Pipe_60"
+    },
+    {
+      "type": "Pump",
+      "source": "Junct_60",
+      "target": "Junct_70",
+      "key": "B9B10"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_70",
+      "target": "Junct_80",
+      "key": "Pipe_70"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_80",
+      "target": "Junct_90",
+      "key": "Pipe_80"
+    },
+    {
+      "type": "Valve",
+      "source": "Junct_90",
+      "target": "Junct_100",
+      "key": "Val_20"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_100",
+      "target": "R_Mira",
+      "key": "Pipe_90"
+    },
+    {
+      "type": "Pump",
+      "source": "Junct_110",
+      "target": "Junct_120",
+      "key": "B8"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_120",
+      "target": "Junct_140",
+      "key": "Pipe_130"
+    },
+    {
+      "type": "Valve",
+      "source": "Junct_140",
+      "target": "Junct_150",
+      "key": "Val_30"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_150",
+      "target": "R_Fontinha",
+      "key": "Pipe_140"
+    },
+    {
+      "type": "Pump",
+      "source": "Junct_160",
+      "target": "Junct_170",
+      "key": "B4N"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_170",
+      "target": "Junct_180",
+      "key": "Pipe_170"
+    },
+    {
+      "type": "Valve",
+      "source": "Junct_180",
+      "target": "Junct_190",
+      "key": "Val_40"
+    },
+    {
+      "type": "Pipe",
+      "source": "Junct_190",
+      "target": "R_Lemede",
+      "key": "Pipe_180"
+    },
+    {
+      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_10",
+      "key": "Pipe_10"
+    },
+    {
+      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_60",
+      "key": "Pipe_110"
+    },
+    {
+      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_110",
+      "key": "Pipe_120"
+    },
+    {
+      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_160",
+      "key": "Pipe_160"
+    },
+    {
+      "type": "Pipe",
+      "source": "R_Tocha",
+      "target": "PE_Tocha",
+      "key": "Pipe_40"
+    },
+    {
+      "type": "Pipe",
+      "source": "R_Mira",
+      "target": "PE_Mira",
+      "key": "Pipe_100"
+    },
+    {
+      "type": "Pipe",
+      "source": "R_Fontinha",
+      "target": "PE_Fontinha",
+      "key": "Pipe_150"
+    },
+    {
+      "type": "Pipe",
+      "source": "R_Lemede",
+      "target": "PE_Lemede",
+      "key": "Pipe_190"
+    }
+  ]
+}
