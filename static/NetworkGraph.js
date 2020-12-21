@@ -4,18 +4,17 @@ function createGraph(jsonData) {
         width = 900 - margin.left - margin.right,
         height = 800 - margin.top - margin.bottom;
 
-// append the div object to the body of the page
-    var div = d3.select("#my_dataviz")
-        //.append("div")
+// append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+        .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
-        .append("g")
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
 
     // Initialize the links
-    var link = div
+    var link = svg
         .selectAll("line")
         .data(jsonData.links)
         .enter()
@@ -23,7 +22,7 @@ function createGraph(jsonData) {
         .style("stroke", "#aaa")
 
     // Initialize the nodes
-    var node = div
+    var node = svg
         .selectAll("circle")
         .data(jsonData.nodes)
         .enter()
@@ -48,11 +47,13 @@ function createGraph(jsonData) {
                     return "#8e07f5"
             }
         })
-    var text = div.selectAll("p")
+    var text = svg
+        .selectAll("text")
         .data(jsonData.nodes)
         .enter()
-        .append("p")
-        .text("text")
+        .append("text")
+        .attr("font-size", "20px")
+        .text("test")
 
     // Let's list the force we wanna apply on the network
     var simulation = d3.forceSimulation(jsonData.nodes)                 // Force algorithm is applied to data.nodes
@@ -63,7 +64,7 @@ function createGraph(jsonData) {
             .links(jsonData.links)                                    // and this the list of links
         )
         .force("charge", d3.forceManyBody().strength(-100))         // This adds repulsion between nodes. Play with the -400 for the repulsion strength
-        .force("center", d3.forceCenter(width / 2, height / 2))     // This force attracts nodes to the center of the div area
+        .force("center", d3.forceCenter(width / 2, height / 2))     // This force attracts nodes to the center of the svg area
         .on("end", ticked);
 
     // This function is run at each iteration of the force algorithm, updating the nodes position.
@@ -90,10 +91,10 @@ function createGraph(jsonData) {
                 return d.y - 6;
             });
         text
-            .attr("cx", function (d) {
+            .attr("x", function (d) {
                 return d.x + 6;
             })
-            .attr("cy", function (d) {
+            .attr("y", function (d) {
                 return d.y - 6;
             });
     }
