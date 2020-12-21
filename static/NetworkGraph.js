@@ -53,7 +53,7 @@ function createGraph(jsonData) {
         .enter()
         .append("text")
         .attr("font-size", "20px")
-        .text("test")
+        .text(function (n) {return n.id})
 
     // Let's list the force we wanna apply on the network
     var simulation = d3.forceSimulation(jsonData.nodes)                 // Force algorithm is applied to data.nodes
