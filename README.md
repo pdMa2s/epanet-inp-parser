@@ -12,7 +12,7 @@ The goal of this project is to create an user-friendly library to create and con
 ### Install and run
 
 ```bash
-$ pip install -r requirements.txt
-$ ./run.sh
+$ npm install
+$ npm run
 ```
 Then use your web browser to access http://localhost:5000/
