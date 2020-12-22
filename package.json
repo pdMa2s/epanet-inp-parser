@@ -1,0 +1,24 @@
+{
+  "name": "epanet-inp-parser",
+  "version": "0.0.1",
+  "description": "inp file parser to svg network graph",
+  "main": "app.js",
+  "scripts": {
+    "pythonRequirements" : "pip install -r requirements.txt",
+    "parseNetwork": "python epanet_inp_parser.py",
+    "runApp": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdMa2s/epanet-inp-parser.git"
+  },
+  "author": "pdMa2s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdMa2s/epanet-inp-parser/issues"
+  },
+  "homepage": "https://github.com/pdMa2s/epanet-inp-parser#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
