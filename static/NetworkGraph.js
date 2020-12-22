@@ -1,3 +1,60 @@
+class NetworkNode{
+    constructor() {
+        this.colour = null;
+    }
+
+}
+class Tank extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#7fed18"
+    }
+}
+class Junction extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#186aed"
+    }
+}
+
+class Reservoir extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#db6516"
+    }
+}
+
+class NodeFactory{
+    constructor() {
+        this.reservoir = null;
+        this.junction = null;
+        this.tank = null;
+    }
+
+    getNodeInstance(type) {
+        let netNode = null;
+        switch (type) {
+            case "Junction":
+                netNode = this.junction == null ? new Junction(): this.junction;
+                break;
+            case "Tank":
+                netNode = this.tank == null ? new Tank(): this.tank;
+                break;
+            case "Valve":
+                return "#07f59a"
+            case "Pipe":
+                return "#ccb927"
+            case "Pump":
+                return "#cc2727"
+            case "Reservoir":
+                netNode = this.reservoir == null ? new Reservoir(): this.reservoir;
+                break;
+            default:
+                return "#8e07f5"
+        }
+        return netNode;
+    }
+}
 function createGraph(jsonData) {
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
@@ -21,39 +78,31 @@ function createGraph(jsonData) {
         .append("line")
         .style("stroke", "#aaa")
 
+    let nodeFactory = new NodeFactory();
     // Initialize the nodes
+    for(let i = 0; i < jsonData.nodes.length; i++) {
+        let jsonDataNode = jsonData.nodes[i]
+        console.log(jsonDataNode.type)
+        let networkNode = nodeFactory.getNodeInstance(jsonDataNode.type)
+        svg
+            .append("circle")
+            .attr("r", 20)
+            .style("fill", networkNode.colour)
+
+        svg
+            .append("text")
+            .attr("font-size", "20px")
+            .text(jsonDataNode.id)
+    }
+
     var node = svg
         .selectAll("circle")
         .data(jsonData.nodes)
-        .enter()
-        .append("circle")
-        .attr("r", 20)
-        .style("fill", function (n) {
-            console.log(n.type)
-            switch (n.type) {
-                case "Junction":
-                    return "#186aed"
-                case "Tank":
-                    return "#7fed18"
-                case "Valve":
-                    return "#07f59a"
-                case "Pipe":
-                    return "#ccb927"
-                case "Pump":
-                    return "#cc2727"
-                case "Reservoir":
-                    return "#db6516"
-                default:
-                    return "#8e07f5"
-            }
-        })
+
     var text = svg
         .selectAll("text")
         .data(jsonData.nodes)
-        .enter()
-        .append("text")
-        .attr("font-size", "20px")
-        .text(function (n) {return n.id})
+
 
     // Let's list the force we wanna apply on the network
     var simulation = d3.forceSimulation(jsonData.nodes)                 // Force algorithm is applied to data.nodes
