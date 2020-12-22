@@ -10,6 +10,7 @@ The goal of this project is to create an user-friendly library to create and con
 * Create an interface to configure the icons of the different elements of the network
 
 ### Install and run
+python, node and npm are required
 
 ```bash
 $ npm install
