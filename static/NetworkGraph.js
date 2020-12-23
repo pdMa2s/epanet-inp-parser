@@ -1,8 +1,7 @@
 class NetworkNode{
     constructor() {
-        this.colour = null;
+        this.colour = "#000000";
     }
-
 }
 class Tank extends NetworkNode{
     constructor() {
@@ -16,41 +15,99 @@ class Junction extends NetworkNode{
         this.colour = "#186aed"
     }
 }
-
 class Reservoir extends NetworkNode{
     constructor() {
         super();
         this.colour = "#db6516"
     }
 }
-
+class Pump extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#cc2727"
+    }
+}
+class CVPipe extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#07f59a"
+    }
+}
+class PRV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#a0e009"
+    }
+}
+class PSV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#bd34eb"
+    }
+}
+class PBV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#659e70"
+    }
+}
+class FCV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#2fb598"
+    }
+}
+class TCV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#2facb5"
+    }
+}
+class GPV extends NetworkNode{
+    constructor() {
+        super();
+        this.colour = "#2f4ab5"
+    }
+}
 class NodeFactory{
     constructor() {
-        this.reservoir = null;
-        this.junction = null;
         this.tank = null;
+        this.junction = null;
+        this.reservoir = null;
+        this.pump = null;
+        this.cVPipe = null;
+        this.prv = null;
+        this.psv = null;
+        this.defaultNode = null;
     }
 
     getNodeInstance(type) {
-        let netNode = null;
+        let netNode;
         switch (type) {
-            case "Junction":
-                netNode = this.junction == null ? new Junction(): this.junction;
-                break;
             case "Tank":
                 netNode = this.tank == null ? new Tank(): this.tank;
                 break;
-            case "Valve":
-                return "#07f59a"
-            case "Pipe":
-                return "#ccb927"
-            case "Pump":
-                return "#cc2727"
+            case "Junction":
+                netNode = this.junction == null ? new Junction(): this.junction;
+                break;
             case "Reservoir":
                 netNode = this.reservoir == null ? new Reservoir(): this.reservoir;
                 break;
+            case "Pump":
+                netNode = this.pump == null ? new Pump(): this.pump
+                break;
+            case "CVPipe":
+                netNode = this.cVPipe == null ? new CVPipe(): this.cVPipe;
+                break;
+            case "PRV":
+                netNode = this.prv == null ? new PRV(): this.prv
+                break;
+            case "PSV":
+                netNode = this.psv == null ? new PSV(): this.psv
+                break;
             default:
-                return "#8e07f5"
+                netNode = this.defaultNode == null ? new NetworkNode(): this.defaultNode;
+                break;
         }
         return netNode;
     }
@@ -68,7 +125,6 @@ function createGraph(jsonData) {
         .attr("height", height + margin.top + margin.bottom)
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-
 
     // Initialize the links
     var link = svg

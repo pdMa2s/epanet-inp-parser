@@ -1,381 +1,282 @@
 {
-  "directed": true,
-  "multigraph": true,
-  "graph": {},
   "nodes": [
     {
-      "pos": [
-        -1133.97,
-        1951.48
-      ],
-      "type": "Junction",
-      "id": "Junct_10"
+      "id": "Junct_10",
+      "type": "Junction"
     },
     {
-      "pos": [
-        -1133.97,
-        2626.58
-      ],
-      "type": "Junction",
-      "id": "Junct_20"
+      "id": "Junct_20",
+      "type": "Junction"
     },
     {
-      "pos": [
-        -1228.9,
-        5094.94
-      ],
-      "type": "Junction",
-      "id": "Junct_30"
+      "id": "Junct_30",
+      "type": "Junction"
     },
     {
-      "pos": [
-        -1250.0,
-        5717.3
-      ],
-      "type": "Junction",
-      "id": "Junct_40"
+      "id": "Junct_40",
+      "type": "Junction"
     },
     {
-      "pos": [
-        -1271.1,
-        7500.0
-      ],
-      "type": "Junction",
-      "id": "PE_Tocha"
+      "id": "PE_Tocha",
+      "type": "Junction"
     },
     {
-      "pos": [
-        -1197.26,
-        3850.21
-      ],
-      "type": "Junction",
-      "id": "Junct_50"
+      "id": "Junct_50",
+      "type": "Junction"
     },
     {
-      "pos": [
-        2104.43,
-        1835.44
-      ],
-      "type": "Junction",
-      "id": "Junct_60"
+      "id": "Junct_60",
+      "type": "Junction"
     },
     {
-      "pos": [
-        2041.14,
-        2447.26
-      ],
-      "type": "Junction",
-      "id": "Junct_70"
+      "id": "Junct_70",
+      "type": "Junction"
     },
     {
-      "pos": [
-        1967.3,
-        3734.18
-      ],
-      "type": "Junction",
-      "id": "Junct_80"
+      "id": "Junct_80",
+      "type": "Junction"
     },
     {
-      "pos": [
-        1977.85,
-        4915.61
-      ],
-      "type": "Junction",
-      "id": "Junct_90"
+      "id": "Junct_90",
+      "type": "Junction"
     },
     {
-      "pos": [
-        1967.3,
-        5474.68
-      ],
-      "type": "Junction",
-      "id": "Junct_100"
+      "id": "Junct_100",
+      "type": "Junction"
     },
     {
-      "pos": [
-        2051.69,
-        7521.1
-      ],
-      "type": "Junction",
-      "id": "PE_Mira"
+      "id": "PE_Mira",
+      "type": "Junction"
     },
     {
-      "pos": [
-        4024.26,
-        1751.05
-      ],
-      "type": "Junction",
-      "id": "Junct_110"
+      "id": "Junct_110",
+      "type": "Junction"
     },
     {
-      "pos": [
-        4003.16,
-        2267.93
-      ],
-      "type": "Junction",
-      "id": "Junct_120"
+      "id": "Junct_120",
+      "type": "Junction"
     },
     {
-      "pos": [
-        3876.58,
-        4789.03
-      ],
-      "type": "Junction",
-      "id": "Junct_140"
+      "id": "Junct_140",
+      "type": "Junction"
     },
     {
-      "pos": [
-        3908.23,
-        5284.81
-      ],
-      "type": "Junction",
-      "id": "Junct_150"
+      "id": "Junct_150",
+      "type": "Junction"
     },
     {
-      "pos": [
-        3855.49,
-        7447.26
-      ],
-      "type": "Junction",
-      "id": "PE_Fontinha"
+      "id": "PE_Fontinha",
+      "type": "Junction"
     },
     {
-      "pos": [
-        6007.38,
-        1782.7
-      ],
-      "type": "Junction",
-      "id": "Junct_160"
+      "id": "Junct_160",
+      "type": "Junction"
     },
     {
-      "pos": [
-        5996.84,
-        2299.58
-      ],
-      "type": "Junction",
-      "id": "Junct_170"
+      "id": "Junct_170",
+      "type": "Junction"
     },
     {
-      "pos": [
-        5986.29,
-        4673.0
-      ],
-      "type": "Junction",
-      "id": "Junct_180"
+      "id": "Junct_180",
+      "type": "Junction"
     },
     {
-      "pos": [
-        5954.64,
-        5200.42
-      ],
-      "type": "Junction",
-      "id": "Junct_190"
+      "id": "Junct_190",
+      "type": "Junction"
     },
     {
-      "pos": [
-        5965.19,
-        7394.51
-      ],
-      "type": "Junction",
-      "id": "PE_Lemede"
+      "id": "PE_Lemede",
+      "type": "Junction"
     },
     {
-      "pos": [
-        3169.83,
-        981.01
-      ],
-      "type": "Reservoir",
-      "id": "Reser_10"
+      "id": "Reser_10",
+      "type": "Reservoir"
     },
     {
-      "pos": [
-        -1271.1,
-        6666.67
-      ],
-      "type": "Tank",
-      "id": "R_Tocha"
+      "id": "R_Tocha",
+      "type": "Tank"
     },
     {
-      "pos": [
-        1977.85,
-        6582.28
-      ],
-      "type": "Tank",
-      "id": "R_Mira"
+      "id": "R_Mira",
+      "type": "Tank"
     },
     {
-      "pos": [
-        3834.39,
-        6487.34
-      ],
-      "type": "Tank",
-      "id": "R_Fontinha"
+      "id": "R_Fontinha",
+      "type": "Tank"
     },
     {
-      "pos": [
-        5975.74,
-        6434.6
-      ],
-      "type": "Tank",
-      "id": "R_Lemede"
+      "id": "R_Lemede",
+      "type": "Tank"
+    },
+    {
+      "id": "B6N",
+      "type": "Pump"
+    },
+    {
+      "id": "B9B10",
+      "type": "Pump"
+    },
+    {
+      "id": "B8",
+      "type": "Pump"
+    },
+    {
+      "id": "B4N",
+      "type": "Pump"
+    },
+    {
+      "id": "Val_10",
+      "type": "PSV"
+    },
+    {
+      "id": "Val_20",
+      "type": "PSV"
+    },
+    {
+      "id": "Val_30",
+      "type": "PSV"
+    },
+    {
+      "id": "Val_40",
+      "type": "PSV"
     }
   ],
   "links": [
     {
-      "type": "Pump",
-      "source": "Junct_10",
-      "target": "Junct_20",
-      "key": "B6N"
+      "source": "Reser_10",
+      "target": "Junct_10"
     },
     {
-      "type": "Pipe",
-      "source": "Junct_20",
-      "target": "Junct_50",
-      "key": "Pipe_50"
-    },
-    {
-      "type": "Valve",
-      "source": "Junct_30",
-      "target": "Junct_40",
-      "key": "Val_10"
-    },
-    {
-      "type": "Pipe",
       "source": "Junct_40",
-      "target": "R_Tocha",
-      "key": "Pipe_30"
+      "target": "R_Tocha"
     },
     {
-      "type": "Pipe",
-      "source": "Junct_50",
-      "target": "Junct_30",
-      "key": "Pipe_60"
-    },
-    {
-      "type": "Pump",
-      "source": "Junct_60",
-      "target": "Junct_70",
-      "key": "B9B10"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_70",
-      "target": "Junct_80",
-      "key": "Pipe_70"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_80",
-      "target": "Junct_90",
-      "key": "Pipe_80"
-    },
-    {
-      "type": "Valve",
-      "source": "Junct_90",
-      "target": "Junct_100",
-      "key": "Val_20"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_100",
-      "target": "R_Mira",
-      "key": "Pipe_90"
-    },
-    {
-      "type": "Pump",
-      "source": "Junct_110",
-      "target": "Junct_120",
-      "key": "B8"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_120",
-      "target": "Junct_140",
-      "key": "Pipe_130"
-    },
-    {
-      "type": "Valve",
-      "source": "Junct_140",
-      "target": "Junct_150",
-      "key": "Val_30"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_150",
-      "target": "R_Fontinha",
-      "key": "Pipe_140"
-    },
-    {
-      "type": "Pump",
-      "source": "Junct_160",
-      "target": "Junct_170",
-      "key": "B4N"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_170",
-      "target": "Junct_180",
-      "key": "Pipe_170"
-    },
-    {
-      "type": "Valve",
-      "source": "Junct_180",
-      "target": "Junct_190",
-      "key": "Val_40"
-    },
-    {
-      "type": "Pipe",
-      "source": "Junct_190",
-      "target": "R_Lemede",
-      "key": "Pipe_180"
-    },
-    {
-      "type": "Pipe",
-      "source": "Reser_10",
-      "target": "Junct_10",
-      "key": "Pipe_10"
-    },
-    {
-      "type": "Pipe",
-      "source": "Reser_10",
-      "target": "Junct_60",
-      "key": "Pipe_110"
-    },
-    {
-      "type": "Pipe",
-      "source": "Reser_10",
-      "target": "Junct_110",
-      "key": "Pipe_120"
-    },
-    {
-      "type": "Pipe",
-      "source": "Reser_10",
-      "target": "Junct_160",
-      "key": "Pipe_160"
-    },
-    {
-      "type": "Pipe",
       "source": "R_Tocha",
-      "target": "PE_Tocha",
-      "key": "Pipe_40"
+      "target": "PE_Tocha"
     },
     {
-      "type": "Pipe",
+      "source": "Junct_20",
+      "target": "Junct_50"
+    },
+    {
+      "source": "Junct_50",
+      "target": "Junct_30"
+    },
+    {
+      "source": "Junct_70",
+      "target": "Junct_80"
+    },
+    {
+      "source": "Junct_80",
+      "target": "Junct_90"
+    },
+    {
+      "source": "Junct_100",
+      "target": "R_Mira"
+    },
+    {
       "source": "R_Mira",
-      "target": "PE_Mira",
-      "key": "Pipe_100"
+      "target": "PE_Mira"
     },
     {
-      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_60"
+    },
+    {
+      "source": "Reser_10",
+      "target": "Junct_110"
+    },
+    {
+      "source": "Junct_120",
+      "target": "Junct_140"
+    },
+    {
+      "source": "Junct_150",
+      "target": "R_Fontinha"
+    },
+    {
       "source": "R_Fontinha",
-      "target": "PE_Fontinha",
-      "key": "Pipe_150"
+      "target": "PE_Fontinha"
     },
     {
-      "type": "Pipe",
+      "source": "Reser_10",
+      "target": "Junct_160"
+    },
+    {
+      "source": "Junct_170",
+      "target": "Junct_180"
+    },
+    {
+      "source": "Junct_190",
+      "target": "R_Lemede"
+    },
+    {
       "source": "R_Lemede",
-      "target": "PE_Lemede",
-      "key": "Pipe_190"
+      "target": "PE_Lemede"
+    },
+    {
+      "source": "Junct_10",
+      "target": "B6N"
+    },
+    {
+      "source": "B6N",
+      "target": "Junct_20"
+    },
+    {
+      "source": "Junct_60",
+      "target": "B9B10"
+    },
+    {
+      "source": "B9B10",
+      "target": "Junct_70"
+    },
+    {
+      "source": "Junct_110",
+      "target": "B8"
+    },
+    {
+      "source": "B8",
+      "target": "Junct_120"
+    },
+    {
+      "source": "Junct_160",
+      "target": "B4N"
+    },
+    {
+      "source": "B4N",
+      "target": "Junct_170"
+    },
+    {
+      "source": "Junct_30",
+      "target": "Val_10"
+    },
+    {
+      "source": "Val_10",
+      "target": "Junct_40"
+    },
+    {
+      "source": "Junct_90",
+      "target": "Val_20"
+    },
+    {
+      "source": "Val_20",
+      "target": "Junct_100"
+    },
+    {
+      "source": "Junct_140",
+      "target": "Val_30"
+    },
+    {
+      "source": "Val_30",
+      "target": "Junct_150"
+    },
+    {
+      "source": "Junct_180",
+      "target": "Val_40"
+    },
+    {
+      "source": "Val_40",
+      "target": "Junct_190"
     }
   ]
 }
