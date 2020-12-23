@@ -9,7 +9,7 @@ The goal of this project is to create an user-friendly library to create and con
 - [ ] Use the same network layout such as the one of the inp file
 - [ ] Create an interface to configure the colours of the different elements of the network
 - [ ] Create an interface to configure the icons of the different elements of the network
-
+- [ ] Solve performance issues when loading the network
 ### Install and run
 python, node and npm are required
 
