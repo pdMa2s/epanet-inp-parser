@@ -4,10 +4,11 @@
 The goal of this project is to create an user-friendly library to create and configure water network graphs using inp files like the ones that are used on [epanet](https://www.epa.gov/water-research/epanet).
 
 ### TODOS
-* Add different icons for different types of nodes and links
-* Use the same network layout such as the one of the inp file
-* Create an interface to configure the colours of the different elements of the network
-* Create an interface to configure the icons of the different elements of the network
+- [x] Add more network elements such as pumps, and many types of valves
+- [ ] Add different icons for different types of nodes and links
+- [ ] Use the same network layout such as the one of the inp file
+- [ ] Create an interface to configure the colours of the different elements of the network
+- [ ] Create an interface to configure the icons of the different elements of the network
 
 ### Install and run
 
