@@ -2,143 +2,213 @@
   "nodes": [
     {
       "id": "Junct_10",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1133.97,
+      "y": 1951.48
     },
     {
       "id": "Junct_20",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1133.97,
+      "y": 2626.58
     },
     {
       "id": "Junct_30",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1228.9,
+      "y": 5094.94
     },
     {
       "id": "Junct_40",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1250.0,
+      "y": 5717.3
     },
     {
       "id": "PE_Tocha",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1271.1,
+      "y": 7500.0
     },
     {
       "id": "Junct_50",
-      "type": "Junction"
+      "type": "Junction",
+      "x": -1197.26,
+      "y": 3850.21
     },
     {
       "id": "Junct_60",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 2104.43,
+      "y": 1835.44
     },
     {
       "id": "Junct_70",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 2041.14,
+      "y": 2447.26
     },
     {
       "id": "Junct_80",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 1967.3,
+      "y": 3734.18
     },
     {
       "id": "Junct_90",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 1977.85,
+      "y": 4915.61
     },
     {
       "id": "Junct_100",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 1967.3,
+      "y": 5474.68
     },
     {
       "id": "PE_Mira",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 2051.69,
+      "y": 7521.1
     },
     {
       "id": "Junct_110",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 4024.26,
+      "y": 1751.05
     },
     {
       "id": "Junct_120",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 4003.16,
+      "y": 2267.93
     },
     {
       "id": "Junct_140",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 3876.58,
+      "y": 4789.03
     },
     {
       "id": "Junct_150",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 3908.23,
+      "y": 5284.81
     },
     {
       "id": "PE_Fontinha",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 3855.49,
+      "y": 7447.26
     },
     {
       "id": "Junct_160",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 6007.38,
+      "y": 1782.7
     },
     {
       "id": "Junct_170",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 5996.84,
+      "y": 2299.58
     },
     {
       "id": "Junct_180",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 5986.29,
+      "y": 4673.0
     },
     {
       "id": "Junct_190",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 5954.64,
+      "y": 5200.42
     },
     {
       "id": "PE_Lemede",
-      "type": "Junction"
+      "type": "Junction",
+      "x": 5965.19,
+      "y": 7394.51
     },
     {
       "id": "Reser_10",
-      "type": "Reservoir"
+      "type": "Reservoir",
+      "x": 3169.83,
+      "y": 981.01
     },
     {
       "id": "R_Tocha",
-      "type": "Tank"
+      "type": "Tank",
+      "x": -1271.1,
+      "y": 6666.67
     },
     {
       "id": "R_Mira",
-      "type": "Tank"
+      "type": "Tank",
+      "x": 1977.85,
+      "y": 6582.28
     },
     {
       "id": "R_Fontinha",
-      "type": "Tank"
+      "type": "Tank",
+      "x": 3834.39,
+      "y": 6487.34
     },
     {
       "id": "R_Lemede",
-      "type": "Tank"
+      "type": "Tank",
+      "x": 5975.74,
+      "y": 6434.6
     },
     {
       "id": "B6N",
-      "type": "Pump"
+      "type": "Pump",
+      "x": 0.0,
+      "y": -675.0999999999999
     },
     {
       "id": "B9B10",
-      "type": "Pump"
+      "type": "Pump",
+      "x": 63.289999999999736,
+      "y": -611.8200000000002
     },
     {
       "id": "B8",
-      "type": "Pump"
+      "type": "Pump",
+      "x": 21.100000000000364,
+      "y": -516.8799999999999
     },
     {
       "id": "B4N",
-      "type": "Pump"
+      "type": "Pump",
+      "x": 10.539999999999964,
+      "y": -516.8799999999999
     },
     {
       "id": "Val_10",
-      "type": "Valve"
+      "type": "Valve",
+      "x": 21.09999999999991,
+      "y": -622.3600000000006
     },
     {
       "id": "Val_20",
-      "type": "Valve"
+      "type": "Valve",
+      "x": 10.549999999999955,
+      "y": -559.0700000000006
     },
     {
       "id": "Val_30",
-      "type": "Valve"
+      "type": "Valve",
+      "x": -31.65000000000009,
+      "y": -495.78000000000065
     },
     {
       "id": "Val_40",
-      "type": "Valve"
+      "type": "Valve",
+      "x": 31.649999999999636,
+      "y": -527.4200000000001
     }
   ],
   "links": [
