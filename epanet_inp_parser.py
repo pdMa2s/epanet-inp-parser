@@ -1,8 +1,5 @@
 import json
-from epanet import epamodule
-
-EPANET_NODE_TYPES = {0: 'Junction', 1: 'Reservoir', 2: 'Tank'}
-EPANET_LINK_TYPES = {0: 'CVPipe', 1: 'Pipe',  2: 'Pump', 3: 'PRV', 4: 'PSV', 5: 'PBV', 6: 'FCV', 7: 'TCV', 8: 'GPV'}
+import wntr
 
 
 class JsonNode(dict):
@@ -24,31 +21,24 @@ def write_json_file(graph_dict):
         json_file.write(json.dumps(graph_dict))
 
 
-def get_network_nodes():
-    node_count = epamodule.ENgetcount(epamodule.EN_NODECOUNT)
+def get_network_nodes(network_):
+    node_registry = network_.nodes()
     json_nodes_ = []
-    for n_idx in range(1, node_count+1):
-        node_id = epamodule.ENgetnodeid(n_idx)
-        node_type = epamodule.ENgetnodetype(n_idx)
-        jsn_n = JsonNode(node_id.decode("utf-8"), EPANET_NODE_TYPES[node_type])
+    for node_id, node in node_registry:
+        jsn_n = JsonNode(node_id, node.node_type)
         json_nodes_.append(jsn_n)
     return json_nodes_
 
 
-def get_network_links():
-    link_count = epamodule.ENgetcount(epamodule.EN_LINKCOUNT)
+def get_network_links(network_):
+    link_registry = network_.links()
     json_links_ = []
     json_nodes_ = []
-    for l_idx in range(1, link_count+1):
-        link_type = epamodule.ENgetlinktype(l_idx)
-        link_type = EPANET_LINK_TYPES[link_type]
-        link_id = epamodule.ENgetlinkid(l_idx).decode("utf-8")
-        link_start_idx, link_end_idx = epamodule.ENgetlinknodes(l_idx)
-        start_node_id = epamodule.ENgetnodeid(link_start_idx).decode("utf-8")
-        end_node_id = epamodule.ENgetnodeid(link_end_idx).decode("utf-8")
-        if link_type in ("Pump", "PSV", 'CVPipe'):
-
-            json_nodes_.append(JsonNode(link_id, link_type))
+    for link_id, link in link_registry:
+        start_node_id = link.start_node.name
+        end_node_id = link.end_node.name
+        if link.link_type in ("Pump", "Valve"):
+            json_nodes_.append(JsonNode(link_id, link.link_type))
             json_links_.append(JsonLink(start_node_id, link_id))
             json_links_.append(JsonLink(link_id, end_node_id))
         else:
@@ -58,10 +48,10 @@ def get_network_links():
 
 
 if __name__ == '__main__':
-    epamodule.ENopen('network_test.inp', "/dev/null")
+    network = wntr.network.WaterNetworkModel('network_test.inp')
 
-    json_nodes = get_network_nodes()
-    json_links, extra_links = get_network_links()
+    json_nodes = get_network_nodes(network)
+    json_links, extra_links = get_network_links(network)
     json_nodes.extend(extra_links)
     data_dict = {"nodes": json_nodes,
                  "links": json_links}
