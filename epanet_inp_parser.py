@@ -37,6 +37,24 @@ def get_midway_point(coords_1, coords_2):
     return coords_1[0] - coords_2[0], coords_1[1] - coords_2[1]
 
 
+def translate_coordinates_from_epanet_to_web_standard(nodes):
+    min_x, min_y, max_y = 0, 0, 0
+    for n in nodes:
+        if n['x'] < min_x:
+            min_x = n['x']
+        if n['y'] < min_y:
+            min_y = n['y']
+        if n['y'] > max_y:
+            max_y = n['y']
+
+    min_x, min_y = abs(min_x), abs(min_y)
+    max_y += min_y
+    for n in nodes:
+        n['x'] += min_x
+        n['y'] += min_y
+        n['y'] = max_y - n['y']
+
+
 def get_network_links(network_):
     link_registry = network_.links()
     json_links_ = []
@@ -62,6 +80,7 @@ if __name__ == '__main__':
     json_nodes = get_network_nodes(network)
     json_links, extra_links = get_network_links(network)
     json_nodes.extend(extra_links)
+    translate_coordinates_from_epanet_to_web_standard(json_nodes)
     data_dict = {"nodes": json_nodes,
                  "links": json_links}
 
